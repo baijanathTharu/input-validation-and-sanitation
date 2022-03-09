@@ -13,6 +13,6 @@
   - [x] country code
 - [x] Boolean
 - [x] Date
-- [ ] Array
-  - [] Array of numbers
-  - [] Array of strings
+- [x] Array
+  - [x] Array of numbers
+  - [x] Array of strings
