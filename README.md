@@ -4,10 +4,11 @@
   - [x] Company Name
   - [x] Email
   - [x] URl
-* [ ] Number
-  - [] Positive Number
-  - [] Negative Number
-  - [] Number in a range
+* [x] Number
+  - [x] Positive Number
+  - [x] Negative Number
+  - [x] Number in a range
 * [ ] Phone number
   - country code
 * [ ] Boolean 
+* [ ] Date
