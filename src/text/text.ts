@@ -1,11 +1,11 @@
-import * as yup from 'yup';
+import * as yup from "yup";
 
 // name schema
 export const personNameSchema = yup.object().shape({
   name: yup
     .string()
     .required()
-    .min(2,)
+    .min(2)
     .max(30)
     .matches(/^[a-zA-Z]{2,}\s[a-zA-Z]{2,}/),
 });
