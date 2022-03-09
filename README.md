@@ -11,8 +11,8 @@
   - [x] Number in a range
 - [x] Phone number
   - [x] country code
-- [ ] Boolean
-- [ ] Date
+- [x] Boolean
+- [x] Date
 - [ ] Array
   - [] Array of numbers
   - [] Array of strings
