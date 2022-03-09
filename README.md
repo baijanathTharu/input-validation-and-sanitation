@@ -1,14 +1,18 @@
 ## User Input Validation
-* [x] Text
+
+- [x] Text
   - [x] Person Name
   - [x] Company Name
   - [x] Email
   - [x] URl
-* [x] Number
+- [x] Number
   - [x] Positive Number
   - [x] Negative Number
   - [x] Number in a range
-* [ ] Phone number
-  - country code
-* [ ] Boolean 
-* [ ] Date
+- [x] Phone number
+  - [x] country code
+- [ ] Boolean
+- [ ] Date
+- [ ] Array
+  - [] Array of numbers
+  - [] Array of strings
