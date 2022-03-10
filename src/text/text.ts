@@ -29,3 +29,15 @@ export const companyNameSchema = yup.object().shape({
 export const urlSchema = yup.object().shape({
   url: yup.string().required().url().min(10).max(50),
 });
+
+// description schema
+// allowed symbols:
+//  A-Za-z0-9_@./#&+"',?\s!-
+export const descriptionSchema = yup.object().shape({
+  text: yup
+    .string()
+    .required()
+    .min(10)
+    .max(500)
+    .matches(/^[A-Za-z0-9_@./#&+"',?\s!-]*$/),
+});

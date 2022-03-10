@@ -1,4 +1,10 @@
-import { companyNameSchema, emailSchema, personNameSchema, urlSchema } from ".";
+import {
+  companyNameSchema,
+  descriptionSchema,
+  emailSchema,
+  personNameSchema,
+  urlSchema,
+} from ".";
 
 describe("testing person name field", () => {
   it('"John Doe" is a valid name', async () => {
@@ -107,4 +113,44 @@ describe("testing url field", () => {
     });
     expect(isValid).toBe(false);
   });
+});
+
+const descriptions = [
+  {
+    text: "",
+    isValid: false,
+  },
+  {
+    text: "This is a test",
+    isValid: true,
+  },
+  {
+    text: "How are you?",
+    isValid: true,
+  },
+  {
+    text: "Alas! I am not feeling well.",
+    isValid: true,
+  },
+  {
+    text: "This is a test, how are you?, Alas! I am not feeling well.",
+    isValid: true,
+  },
+  {
+    text: "<script>malicious code</script>",
+    isValid: false,
+  },
+];
+
+describe("testing description field", () => {
+  for (const description of descriptions) {
+    it(`"${description.text}" is ${
+      description.isValid ? "valid" : "invalid"
+    }`, async () => {
+      const isValid = await descriptionSchema.isValid({
+        text: description.text,
+      });
+      expect(isValid).toBe(description.isValid);
+    });
+  }
 });
